@@ -1,5 +1,3 @@
-from unicodedata import name
-
 
 def display_variables():
     print_header("Variables")
