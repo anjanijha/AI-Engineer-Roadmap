@@ -1,6 +1,6 @@
 from utils.printer import print_header
 def print_name_age_profession():
-    print(f"1.print your name, age, and profession")
+    print_header("Exercise 1: Print Name, Age, and Profession")
     name = "Anjani"
     age = 32
     profession = "AI Engineer"
@@ -10,7 +10,7 @@ def print_name_age_profession():
 
 
 def sum_of_two_numbers():
-    print(f"2. Take two numbers as input and print their sum")
+    print_header("Exercise 2: Sum of Two Numbers")
     num1=int(input("Enter first number:"))
     num2=int(input("Enter second number:"))
     total = num1 + num2
@@ -18,24 +18,22 @@ def sum_of_two_numbers():
 
 
 def convert_celsius_to_fahrenheit():
-    print(f"3. Convert Celsius to fahrenheit")
+    print_header("Exercise 3: Convert Celsius to Fahrenheit")
     celsius = float(input("Enter temperature in celsius:"))
     fahrenheit = ( celsius * 9 / 5) + 32
     print(f"Temperature in fahrenheit is: {fahrenheit}")
 
 
 def swap_two_numbers():
-    print(f"4. Swap two numbers without using third variable")
+    print_header("Exercise 4: Swap Two Numbers")
     num1 = int(input("Enter the first number:"))
     num2 = int(input("enter the second number:"))
-    num1 = num1 + num2
-    num2 = num1 - num2
-    num1 = num1 - num2
+    num1,num2 = num2,num1
     print(f"After swapping the first number is: {num1}")
     print(f"After swapping the second number is: {num2}")
 
 def calculate_area_of_rectangle():
-    print(f"5. Calculate the area of a rectangle")
+    print_header("Exercise 5: Calculate the Area of a Rectangle")
     length = float(input("Enter the length of rectangle:"))
     width = float(input("Enter the width of rectangle:"))
     area = length * width
@@ -60,6 +58,7 @@ Experience: 8 years
 
 
 def employee_information():
+    print_header("Mini Project: Employee Information")
     name = input(f"Enter employee name:")
     company = input(f"Enter company name :")
     experience = int(input(f"Enter years of experience:"))
@@ -70,17 +69,12 @@ def employee_information():
     print(f"Experience: {experience} years")
 
 def main():
-    print_header("Print Name, Age, and Profession")
+
     print_name_age_profession()
-    print_header("Sum of Two Numbers")
     sum_of_two_numbers()
-    print_header("Convert Celsius to Fahrenheit")
     convert_celsius_to_fahrenheit()
-    print_header("Swap Two Numbers")
     swap_two_numbers()
-    print_header("Calculate Area of Rectangle")
     calculate_area_of_rectangle()
-    print_header("Employee Information")
     employee_information()
 
 
