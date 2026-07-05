@@ -1,6 +1,3 @@
-
-
-##########################################################################################
 def print_name_age_profession():
     print(f"1.print your name, age, and profession")
     name = "Anjani"
@@ -10,7 +7,6 @@ def print_name_age_profession():
     print(f"Age: {age}")
     print(f"Profession: {profession}")
 
-##########################################################################################
 
 def sum_of_two_numbers():
     print(f"2. Take two numbers as input and print their sum")
@@ -19,7 +15,6 @@ def sum_of_two_numbers():
     total = num1 + num2
     print(f"Sum of above two numbers is: {total}")
 
-##########################################################################################
 
 def convert_celsius_to_fahrenheit():
     print(f"3. Convert Celsius to fahrenheit")
@@ -27,7 +22,7 @@ def convert_celsius_to_fahrenheit():
     fahrenheit = ( celsius * 9 / 5) + 32
     print(f"Temperature in fahrenheit is: {fahrenheit}")
 
-##########################################################################################
+
 def swap_two_numbers():
     print(f"4. Swap two numbers without using third variable")
     num1 = int(input("Enter the first number:"))
@@ -38,7 +33,6 @@ def swap_two_numbers():
     print(f"After swapping the first number is: {num1}")
     print(f"After swapping the second number is: {num2}")
 
-##########################################################################################
 def calculate_area_of_rectangle():
     print(f"5. Calculate the area of a rectangle")
     length = float(input("Enter the length of rectangle:"))
@@ -46,8 +40,6 @@ def calculate_area_of_rectangle():
     area = length * width
     print(f"Area of rectangle is: {area}")
 
-
-########################################################################################
 
 
 """
@@ -65,7 +57,6 @@ Experience: 8 years
 
 """
 
-##########################################################################################
 
 def employee_information():
     name = input(f"Enter the name:")
