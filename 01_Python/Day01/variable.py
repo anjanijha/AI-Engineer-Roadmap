@@ -1,9 +1,9 @@
 def display_variables():
-    print(f"============Variables====================")
-    name="Anjani"
-    experience=8
-    salary =24
-    is_sdet=True
+    print_header("Variables")
+    name = "Anjani"
+    experience = 8
+    salary = 24
+    is_sdet = True
     print(name)
     print(experience)
     print(salary)
@@ -11,13 +11,9 @@ def display_variables():
 
 def user_input():
 
-    print(f"===========User Input====================")
-    #########User-Input################
+    print_header("User Input")
     name=input("Enter your name:")
-    print(f"Welcome, {name}!");
-
-
-
+    print(f"Welcome, {name}!")
 
 
 """
@@ -27,18 +23,22 @@ int====>whole number
 float==>decimal number
 bool===>True/false
 
-
 """
 def basic_operations():
 
-    print("============Basic Opernations====================")
-    a=20
-    b=5
-    print(f"Additon: {a+b}")
-    print(f"Subtraction: {a-b}")
-    print(f"Multiplication: {a*b}")
-    print(f"Division: {a/b}")
-    print(f"Modulus: {a%b}")
+    print_header("Basic Operations")
+    num1=20
+    num2=5
+    print(f"Addition: {num1 + num2}")
+    print(f"Subtraction: {num1 - num2}")
+    print(f"Multiplication: {num1 * num2}")
+    print(f"Division: {num1 / num2}")
+    print(f"Modulus: {num1 % num2}")
+
+def print_header(title: str):
+    print("\n" + "=" * 40)
+    print(title)
+    print("=" * 40)
 
 def main():
     display_variables()
