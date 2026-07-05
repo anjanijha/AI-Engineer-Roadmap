@@ -1,13 +1,16 @@
+from unicodedata import name
+
+
 def display_variables():
     print_header("Variables")
     name = "Anjani"
     experience = 8
     salary = 24
     is_sdet = True
-    print(name)
-    print(experience)
-    print(salary)
-    print(is_sdet)
+    print(f"Name        : {name}")
+    print(f"Experience  : {experience}")
+    print(f"Salary      : {salary}")
+    print(f"Is SDET     : {is_sdet}")
 
 def user_input():
 
@@ -27,18 +30,19 @@ bool===>True/false
 def basic_operations():
 
     print_header("Basic Operations")
-    num1=20
-    num2=5
-    print(f"Addition: {num1 + num2}")
-    print(f"Subtraction: {num1 - num2}")
+    num1 = 20
+    num2 = 5
+    print(f"Addition:       {num1 + num2}")
+    print(f"Subtraction:    {num1 - num2}")
     print(f"Multiplication: {num1 * num2}")
-    print(f"Division: {num1 / num2}")
-    print(f"Modulus: {num1 % num2}")
+    print(f"Division:       {num1 / num2}")
+    print(f"Modulus:        {num1 % num2}")
 
 def print_header(title: str):
-    print("\n" + "=" * 40)
-    print(title)
-    print("=" * 40)
+    print()
+    print("=" * 50)
+    print(f"🚀 {title}")
+    print("=" * 50)
 
 def main():
     display_variables()

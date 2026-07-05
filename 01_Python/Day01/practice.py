@@ -3,8 +3,8 @@ def print_name_age_profession():
     name = "Anjani"
     age = 32
     profession = "AI Engineer"
-    print(f"Name: {name}")
-    print(f"Age: {age}")
+    print(f"Name:       {name}")
+    print(f"Age:        {age}")
     print(f"Profession: {profession}")
 
 
@@ -59,33 +59,34 @@ Experience: 8 years
 
 
 def employee_information():
-    name = input(f"Enter the name:")
-    company = input(f"Enter the company :")
-    experience = int(input(f"Enter the experience:"))
+    name = input(f"Enter employee name:")
+    company = input(f"Enter company name :")
+    experience = int(input(f"Enter years of experience:"))
     print("\nEmployee Details:")
     print(f"-----------------")
-    print(f"Name: {name}")
-    print(f"Company: {company}")
+    print(f"Name:       {name}")
+    print(f"Company:    {company}")
     print(f"Experience: {experience} years")
 
 def main():
-    print_header("print_name_age_profession")
+    print_header("Print Name, Age, and Profession")
     print_name_age_profession()
-    print_header("sum_of_two_numbers")
+    print_header("Sum of Two Numbers")
     sum_of_two_numbers()
-    print_header("convert_celsius_to_fahrenheit")
+    print_header("Convert Celsius to Fahrenheit")
     convert_celsius_to_fahrenheit()
-    print_header("swap_two_numbers")
+    print_header("Swap Two Numbers")
     swap_two_numbers()
-    print_header("calculate_area_of_rectangle")
+    print_header("Calculate Area of Rectangle")
     calculate_area_of_rectangle()
-    print_header("employee_information")
+    print_header("Employee Information")
     employee_information()
 
 def print_header(title: str):
-    print("\n" + "=" * 40)
-    print(title)
-    print("=" * 40)
+    print()
+    print("=" * 50)
+    print(f"🚀 {title}")
+    print("=" * 50)
 
 if __name__ == "__main__":
     main()
