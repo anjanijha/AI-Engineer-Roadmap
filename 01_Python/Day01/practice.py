@@ -1,3 +1,4 @@
+from utils.printer import print_header
 def print_name_age_profession():
     print(f"1.print your name, age, and profession")
     name = "Anjani"
@@ -82,11 +83,6 @@ def main():
     print_header("Employee Information")
     employee_information()
 
-def print_header(title: str):
-    print()
-    print("=" * 50)
-    print(f"🚀 {title}")
-    print("=" * 50)
 
 if __name__ == "__main__":
     main()

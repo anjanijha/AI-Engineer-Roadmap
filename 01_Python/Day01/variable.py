@@ -1,4 +1,4 @@
-
+from utils.printer import print_header
 def display_variables():
     print_header("Variables")
     name = "Anjani"
@@ -36,11 +36,6 @@ def basic_operations():
     print(f"Division:       {num1 / num2}")
     print(f"Modulus:        {num1 % num2}")
 
-def print_header(title: str):
-    print()
-    print("=" * 50)
-    print(f"🚀 {title}")
-    print("=" * 50)
 
 def main():
     display_variables()
