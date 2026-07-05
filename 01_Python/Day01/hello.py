@@ -5,8 +5,8 @@ This program prints a welcome message.
 """
 
 def main():
-    print("Hello, AI Engineer!")
-    print("My name is Anjani")
+    print(f"Hello, AI Engineer!")
+    print(f"My name is Anjani")
 
 if __name__== "__main__":
     main()

@@ -1,5 +1,5 @@
 def display_variables():
-    print("============Variables====================")
+    print(f"============Variables====================")
     name="Anjani"
     experience=8
     salary =24
@@ -11,10 +11,10 @@ def display_variables():
 
 def user_input():
 
-    print("===========User Input====================")
+    print(f"===========User Input====================")
     #########User-Input################
     name=input("Enter your name:")
-    print("Welcome",name);
+    print(f"Welcome, {name}!");
 
 
 
@@ -34,11 +34,11 @@ def basic_operations():
     print("============Basic Opernations====================")
     a=20
     b=5
-    print("Additon:",a+b)
-    print("Subtraction:",a-b)
-    print("Multiplication:",a*b)
-    print("Division:",a/b)
-    print("Modulus:",a%b)
+    print(f"Additon: {a+b}")
+    print(f"Subtraction: {a-b}")
+    print(f"Multiplication: {a*b}")
+    print(f"Division: {a/b}")
+    print(f"Modulus: {a%b}")
 
 def main():
     display_variables()
