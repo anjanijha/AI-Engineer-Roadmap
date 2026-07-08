@@ -1,38 +1,33 @@
+from email.mime import text
+
 from utils.printer import print_header
 
+NAME = "Anjani Kumar Jha"
 def print_name():
-    name = "Anjani Kumar Jha"
-    print(f"Full Name: {name}")
+    print(f"Full Name: {NAME}")
 
 
 def first_character():
-    name = "Anjani Kumar Jha"
-    print(f"First Character: {name[0]}")
+    print(f"First Character: {NAME[0]}")
 
 def last_character():
-    name = "Anjani Kumar Jha"
-    print(f"Last Character: {name[-1]}")
+    print(f"Last Character: {NAME[-1]}")
 
 def print_first_four_characters():
-    name = "Anjani Kumar Jha"
-    print(f"First Four Characters: {name[0:4]}")
-    
+    print(f"First Four Characters: {NAME[0:4]}")
 
 def print_uppercase_name():
-    name = "Anjani Kumar Jha"
-    print(f"Uppercase Name: {name.upper()}")
+    print(f"Uppercase Name: {NAME.upper()}")
 
 def print_lowercase_name():
-    name = "Anjani Kumar Jha"
-    print(f"Lowercase Name: {name.lower()}")
+    print(f"Lowercase Name: {NAME.lower()}")
 
 def print_replaced_name():
-    name = "Anjani Kumar Jha Capco"
-    replaced_name = name.replace("Capco", "OpenAI")
-    print(f"Replaced Name: {replaced_name}")
+    text = "I work at Capco"
+    print(text.replace("Capco", "OpenAI"))
 
 def print_vowel_count():
-    name = "Anjani".lower()
+    name = NAME.lower()
 
     vowels = (
     name.count("a") +
@@ -44,7 +39,7 @@ def print_vowel_count():
     print(f"Number of vowels: {vowels}")
 
 def print_starts_with_a():
-    name = "Anjani"
+    name = NAME
     starts_with_a = name.startswith("A")
     print(f"Starts with 'A': {starts_with_a}")
 
@@ -55,8 +50,8 @@ def print_welcome_message():
 def email_generator():
     first_name = input("Enter your first name: ").strip().lower()
     last_name = input("Enter your last name: ").strip().lower()
-    domain = "capco.com"
-    email = f"{first_name}.{last_name}@{domain}"
+    company = input("Enter company name: ").strip().lower()
+    email = f"{first_name}.{last_name}@{company}.com"
     print(f"\nGenerated Email: {email}")
 
 
